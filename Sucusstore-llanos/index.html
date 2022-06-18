@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sucusstore - tienda de suculentas y más</title>
+	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div id="bodyIndex">
+    <!--inicia nav y cartel promocional-->
+	<nav class="nav">
+		<a href="index.html"><img src="img/logo p1.png" alt="logo succus store"></a>
+		<ul class="textRight">
+			<li><a href="index.html">Inicio</a>	</li>
+			<li><a href="./pages/productos.html">Productos</a></li>
+			<li><a href="./pages/about-us.html">Preguntas Frecuentes</a></li>
+			<li><a href="./pages/cuenta.html">Cuenta</a></li>
+			<li><a href="./index.html#formulario">Contacto</a></li>
+			<li><a href="./pages/carrito.html"><img src="img/cart.png" alt="icono carrito de compras"></a></li>
+		</ul>
+	</nav>
+	<div class="itemsSignStyle divStyle sign"> 
+		<h1 class="textCenter">Envíos gratis en compras superiores a 4000!!!</h1>
+	</div>
+	<!--finaliza nav y cartel procional-->
+    <!-- inicia slider de fotos-->
+	     <header id="header">
+	     	<img src="img/plants/header-suculentas-1.jpg" alt="imagen principal suculentas">
+	     </header>
+	<!-- inicia galería de productos destacados-->    	
+	<main id="destacados">
+		
+		<!--ul class="textCenter objCentred"-->
+			<h2 class="itemsTitleStyle">Destacados</h2>
+			<div class="galleryStyle1 textCenter">
+				<div class=foto>
+					<h3>Kalanchoe Luciae</h3>
+					<img src="img/plants/kalanchoe-luciae.jpg"  alt="planta kalanchoe luciae"> 
+			    </div>
+				<div class=foto>
+					<h3>Echeveria Lola</h3>
+					<img src="img/plants/echeveria-lola.jpg" alt="planta echeveria lola">
+				</div>
+				<div class=foto>
+					<h3>Haworthia Truncata</h3>
+					<img src="img/plants/haworthia-truncata.jpg" alt="planta haworthia truncata">
+				</div>
+				<div class=foto>
+					<h3>Senecio Kleiniformis</h3>
+					<img src="img/plants/senecio-kleiniformis.jpg" alt="planta senecio kleiniformis">
+				</div>
+				<div class=foto>
+					<h3>Graptopetalum Superbum</h3>
+					<img src="img/plants/graptopetalum-superbum.jpg" alt="planta graptopetalum superbum">
+				</div>
+			</div>
+	</main>
+		<aside id="nuevasMacetas" class="asideStyles">
+			<h3 class="itemsTitleStyle">NUEVAS MACETAS</h3>
+			<article class="bodyPageFont">Llegaron nuevos modelos de macetas a la tienda, adquirilos ya!</article>
+			<div class="flexAsideFotos">
+			<img class="fotoAsides" src="img/miscellaneous/macetas-facetadas.jfif" alt="macetas facetadas de colores varios">
+			<img class="fotoAsides" src="img/miscellaneous/maceta-bol-n35.jpg" alt="macetas plásticas grandes tipo bol">
+			<img class="fotoAsides" src="img/miscellaneous/macetas-barro-cilindro.png" alt="macetas de barro cilíndricas">
+			</div>					
+		</aside>
+		<aside id="nuevasPlantas" class="asideStyles"> 
+			<h3 class="itemsTitleStyle">NUEVAS PLANTAS</h3>
+			<article class="bodyPageFont">No te pierdas los nuevos ingresos premium del sitio</article>	
+			<div class="flexAsideFotos">
+			<img class="fotoAsides" src="img/plants/echeveria-gorgon-grotto.jpg" alt="echeveria grogon grotto planta">
+			<img class="fotoAsides" src="img/plants/titanopsis-calcarea.jpg" width="500" height="500" alt="titanopsis calcarea planta">
+			<img class="fotoAsides" src="img/plants/delosperma-lehmannii.png" alt="planta delosperma lehmannii">
+			</div>
+		</aside>
+		
+		
+	<!-- finaliza galería-->
+	<!--inicia formulario-->
+	<section class="textCenter bodyPageFont contactFormStyle objCentred" id="contacto">
+		<article>
+			<form action="envio.php" method="post" id=formulario>
+					<fieldset>
+							<legend class="textCenter itemsTitleStyle">Contactanos!</legend>
+							<label for="mail">Correo</label> <br>
+							<input type="email" name=mail id="mail" placeholder="alguien@ejemplo.es"> <br><br>
+							<label for="newsletter">¿Le gustaría recibir las últimas novedades en su correo?</label> 
+							<input type="checkbox" name="newsletter" id="newsletter"> <br><br>
+							<label for="asunto">Por favor, indique el asunto de su consulta</label>
+							<select name="asunto" id="asunto"> 
+								<option value="compras">Compras</option>
+								<option value="envios">Envíos</option>
+								<option value="otro">Otro</option>
+							</select><br><br>
+
+			                <label for="mensaje">Mensaje</label> <br>
+							<textarea id="mensaje" cols=50 rows=10></textarea> <br>
+							<input type="submit" value=Enviar>
+							<input type="reset" value=Cancelar>
+					</fieldset>
+			</form> 
+	    </article>
+	</section>
+	<!--finaliza formulario, inicia footer-->
+	<footer class="footer">
+		<h3 class= "itemsTitleStyle">Seguinos en nuestras redes sociales!!!</h3>
+		<section>
+	    		<a href="https://www.instagram.com" target="blank"><img src="img/instagram-logo-32.png" alt="instagram icon"></a>  
+	    		<a href="https://www.twitter.com" target="blank"><img src="img/twitter-logo-30.png" alt="twitter icon"></a>
+	    		<a href="https://www.facebook.com" target="blank"><img src="img/icon-fb-30.png" alt="facebook icon"></a>
+	    		<a href="index.html"><b class="bodyPageFont">Volver arriba</b></a>
+	    </section>
+	</footer>
+	</div>
+</body>
+</html>
