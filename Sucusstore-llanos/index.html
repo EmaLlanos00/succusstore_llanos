@@ -6,19 +6,22 @@
 	<title>Sucusstore - tienda de suculentas y más</title>
 	<link rel="shortcut icon" href="img/favicon.png">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="animaciones/animations.css">
+	<!--<link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 	<div id="bodyIndex">
     <!--inicia nav y cartel promocional-->
-	<nav class="nav">
+	<nav class="nav gradient">
 		<a href="index.html"><img src="img/logo p1.png" alt="logo succus store"></a>
-		<ul class="textRight">
-			<li><a href="index.html">Inicio</a>	</li>
-			<li><a href="./pages/productos.html">Productos</a></li>
-			<li><a href="./pages/about-us.html">Preguntas Frecuentes</a></li>
-			<li><a href="./pages/cuenta.html">Cuenta</a></li>
-			<li><a href="./index.html#formulario">Contacto</a></li>
-			<li><a href="./pages/carrito.html"><img src="img/cart.png" alt="icono carrito de compras"></a></li>
+		<ul class="textRight ">
+			<li class="animate__animated wow animate__pulse hover-underline-animation"><a href="index.html">Inicio</a>	</li>
+			<li class="hover-underline-animation"><a href="./pages/productos.html">Productos</a></li>
+			<li class="hover-underline-animation"><a href="./pages/about-us.html">Preguntas Frecuentes</a></li>
+			<li class="hover-underline-animation"><a href="./pages/cuenta.html">Cuenta</a></li>
+			<li class="hover-underline-animation"><a href="./index.html#formulario">Contacto</a></li>
+			<li class="hover-underline-animation"><a href="./pages/carrito.html"><img src="img/cart.png" alt="icono carrito de compras"></a></li>
 		</ul>
 	</nav>
 	<div class="itemsSignStyle divStyle sign"> 
@@ -36,7 +39,7 @@
 			<h2 class="itemsTitleStyle">Destacados</h2>
 			<div class="galleryStyle1 textCenter">
 				<div class=foto>
-					<h3>Kalanchoe Luciae</h3>
+					<h3 class="wow animate__pulse">Kalanchoe Luciae</h3>
 					<img src="img/plants/kalanchoe-luciae.jpg"  alt="planta kalanchoe luciae"> 
 			    </div>
 				<div class=foto>
@@ -114,5 +117,9 @@
 	    </section>
 	</footer>
 	</div>
+			<script src="js/wow.min.js"></script>
+		<script>
+		   new WOW().init();
+		</script>
 </body>
 </html>
