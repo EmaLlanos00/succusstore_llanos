@@ -10,26 +10,36 @@ html{
 #bodyIndex{
 	display: grid;
 	overflow-x: hidden;
-	overflow-y: scroll;
 	grid-template-areas: 
-	"nav 		nav 		nav"
 	"sign 		sign 		sign"
 	"header 	header 		header"
 	"macetas 	destacados 	plantas"
 	"macetas 	contact 	plantas"
 	"pie 		pie 		pie";
 	min-height: 100vh;
-	grid-template-rows: 5rem 3rem 0.5fr 1fr 1fr auto;
+	grid-template-rows: 3rem 0.5fr 1fr 1fr auto;
 	grid-template-columns: 1fr 3fr 1fr;
 
 }
-
+/*Estilización del Nav*/
 .nav{
-	grid-area: nav;
-	/*background-color: #37FFC1;*/
 	background-color: #ABFFD1;
-	position: sticky;
+}
+		.nav ul li, form{
+			font-family: 'Zen Maru Gothic', sans-serif;
+			font-size: 2rem;
+			
+		}
+		
+#formFix{
+	font-size: 1.5rem;
+}
+/*.nav{
+	
+	background-color: #37FFC1;
+	
 	top: 0;
+	font-size: 2rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -55,11 +65,11 @@ html{
 										position: right center;
 
 
-									}
+									}*/
 .sign{
 	grid-area: sign;
 }
-#header{
+.header{
 	width: 99%;
 	
 	grid-area: header;
@@ -70,7 +80,7 @@ html{
     justify-content: center;
     align-items: center;
 }
-#header img{
+.header img{
 	width: 100%;
 	height: 100%;
 	z-index: -1;
@@ -87,7 +97,7 @@ html{
 	margin: 1rem;
 }
 #destacados h3{
-	width: 25%
+	width: 25%;
 	height: auto;
 }
 
@@ -122,8 +132,7 @@ html{
    /*medium size*/
 @media (max-width: 999px){
 	#bodyIndex{
-		grid-template-areas: 
-		"nav nav"	
+		grid-template-areas: 	
 		"sign sign"		
 		"header header" 	
 		"destacados destacados" 
@@ -131,7 +140,7 @@ html{
 		"contact contact" 	
 		"pie pie" ;		
 		min-height: 100vh;
-		grid-template-rows: 6rem 4rem 30vh auto auto auto auto;
+		grid-template-rows: auto auto auto auto auto auto;
 		grid-template-columns: 50vw 50vw;
 
 	}
@@ -151,8 +160,7 @@ html{
      /*small size*/
 @media (max-width: 600px){
 	#bodyIndex{
-		grid-template-areas: 
-		"nav"	
+		grid-template-areas: 	
 		"sign "		
 		"header" 	
 		"destacados" 
@@ -161,7 +169,7 @@ html{
 		"contact" 	
 		"pie" ;		
 		min-height: 100vh;
-		grid-template-rows: auto 4rem 30vh auto auto auto auto auto;
+		grid-template-rows: auto 30vh 1fr 1fr auto auto auto;
 		grid-template-columns: 100vw;
 
 	}
@@ -183,16 +191,16 @@ html{
 #bodyProductos{
 	display: grid;
 	overflow-x: hidden;
-	overflow-y: scroll;
+	
 	grid-template-areas: 
-	"nav 		nav 		nav"
 	"sign 		sign 		sign"
 	"menu 		cactus 		otros"
 	"menu 		sucus 		otros"
 	"menu 		pots 		otros"
 	"pie 		pie 		pie";
+	gap: 1rem;
 	min-height: 100vh;
-	grid-template-rows: 5rem 3rem 1fr 1fr 0.5fr auto;
+	grid-template-rows: 3rem 1fr 1fr 0.5fr auto;
 	grid-template-columns: 1fr 3fr 1fr;
 
 }
@@ -233,7 +241,6 @@ html{
 @media (max-width: 999px){
 	#bodyProductos{
 	grid-template-areas: 
-	"nav 		nav"
 	"sign 		sign"
 	"menu 		cactus"
 	"menu 		sucus"
@@ -241,7 +248,7 @@ html{
 	"menu       otros"
 	"pie 		pie";
 	min-height: 100vh;
-	grid-template-rows: 5rem 3rem auto auto auto auto auto;
+	grid-template-rows: 3rem auto auto auto auto auto;
 	grid-template-columns: 1fr 3fr;
 
 	}
@@ -270,7 +277,6 @@ html{
 @media (max-width: 650px){
 	#bodyProductos{
 	grid-template-areas: 
-	"nav"
 	"sign"
 	"cactus"
 	"sucus"
@@ -278,7 +284,7 @@ html{
 	"otros"
 	"pie";
 	min-height: 100vh;
-	grid-template-rows: auto 5rem auto auto auto auto auto;
+	grid-template-rows: 5rem auto auto auto auto auto;
 	grid-template-columns: auto;
 
 	}
@@ -306,6 +312,77 @@ html{
 		font-size: 2rem;
 	}
 }
+/*estilos de CARRITO*/
+#mainCarrito{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+/*estilos de SOBRE NOSOTROS*/
+#mainAboutUs{
+	width: 85%;
+	height: auto;
+	padding: 3rem;
+	margin: 1rem;
+	text-align: center;
+	background-color: #EEB8FF;
+
+}
+/*estilos de CUENTA*/
+#accountBody{
+	display: grid;
+	overflow-x: hidden;
+	grid-template-areas:
+	"slider 		slider"
+	"signA 			signA"
+	"form1 			form2"
+	"pie 			pie";
+	min-height: 100vh;
+	grid-template-rows: auto auto auto auto;
+	grid-template-columns: 50vw 50vw;
+
+}
+#slider{
+	grid-area: slider;	
+}
+#accountSign{
+	grid-area: signA;
+}
+#form1{
+	grid-area: form1;
+}
+#form2{
+	grid-area: form2;
+}
+/*CUENTA MD SIZE*/
+@media (max-width: 800px){
+	#accountBody{
+		grid-template-areas:
+		"slider"
+		"signA"
+		"form1"
+		"form2"
+		"pie";
+		grid-template-rows: auto auto auto auto;
+		grid-template-columns: 100Vw;
+	
+	}
+}
+/*.accountFlex{
+	display: flex;
+	flex-flow: column nowrap;
+}
+#AcForms{
+	display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: nowrap;
+}*/
 
 /*alineaciones de textos*/
 .textRight{
@@ -417,6 +494,17 @@ html{
 	flex-flow: column nowrap;
 	justify-content: space-between;
 	align-items: center;
+}
+/*estilo carrito icon*/
+.littleCart{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url(../img/cart2.png); /*var(--bs-navbar-toggler-icon-bg)*/;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 /*estilo de fotos aside*/
 .fotoAsides{
