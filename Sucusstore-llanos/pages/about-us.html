@@ -5,9 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sobre nosotros</title>
 	<link rel="shortcut icon" href="../img/favicon.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/styles.css">
 	<link rel="stylesheet" href="../animaciones/animations.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
 	<!--inicia nav y cartel promocional-->
@@ -99,33 +99,57 @@
 		</button>
 	</div>
 	<!--inicia texto main-->
-	<div class="objCentred"><main id="mainAboutUs">
-		<h2 class="itemsTitleStyle"> ¿Quiénes somos?</h2>
+	<div class="container-fluid"><main>
+		
 		<section>
-
+			<h2 class="itemsTitleStyle"> ¿Quiénes somos?</h2>
 			<article>
 				<p class="bodyPageFont">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam repudiandae illo alias tenetur sunt sint, iste possimus nostrum suscipit ut sequi. Et quas iste, explicabo voluptate. Voluptate minus necessitatibus suscipit.</p>
 				<p class="bodyPageFont">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Dicta optio eos qui dolorem sint, placeat minus fuga fugiat quae perferendis doloremque. Excepturi, vel debitis eum quaerat expedita! Provident, debitis, delectus.</p>
 			</article>
-
 		</section>
-		<h3 class="itemsTitleStyle">Algunos consejos</h3>
+		<!--inicia cards con tips de cuidado-->
 		<section> 
-
-			<h4 class="subtitleFont">Subtítulo</h4>
-			<article> 
-				<p  class="bodyPageFont">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis corrupti a distinctio voluptates quae vero iusto praesentium impedit blanditiis odit omnis, temporibus ad earum reprehenderit tempora nisi laboriosam dolore eveniet?</p>
-			</article>
-			<h4 class="subtitleFont">Otro subtítulo</h4>
-			<article>
-				<p  class="bodyPageFont">Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Vitae impedit incidunt, corrupti animi omnis velit exercitationem atque earum, illum doloribus officia dolor tenetur minima, nulla eius iste a labore laborum.</p>
-			</article>
-			
+			<h2 class="itemsTitleStyle">Algunos consejos</h2>
+			<div class="cardFlex">
+				<div class="card" style="width: 25rem;">
+					<img src="../img/plants/graptoveria-fred-ives.png" class="card-img-top" alt="graptoveria fred ives planta">
+					<div class="card-body">
+					  <h5 class="card-title fs-3">Exposición solar</h5>
+					  <p class="card-text fs-4">La gran mayoría de plantas suculentas y cactus requieren mucho sol. Si querés que crezcan rápido tendrás que buscarles un lugar iluminado.</p>
+					  <a href="#" class="btn btn-primary">Ver más</a>
+					</div>
+				</div>
+				<div class="card" style="width: 25rem;">
+					<img src="../img/plants/watering.jpg" class="card-img-top" alt="riego de suculentas">
+					<div class="card-body">
+					  <h5 class="card-title fs-3">Riego</h5>
+					  <p class="card-text fs-4">Tené cuidado con regarlas de más; es la causa principal de pérdida de estas plantas. Es preferible esperar a que el sustrato esté completamente seco para volver a regar.</p>
+					  <a href="#" class="btn btn-primary">Ver más</a>
+					</div>
+				</div>
+				<div class="card" style="width: 25rem;">
+					<img src="../img/plants/echeveria-laui.jpg" class="card-img-top" alt="echeveria laui">
+					<div class="card-body">
+					  <h5 class="card-title fs-3">Pruina</h5>
+					  <p class="card-text fs-4">Procurá no tocar demasiado tus plantas. Hay muchos géneros de suculentas que tienen pruina, una especie de polvillo blanquesino y ceroso muy beneficioso para ellas. Se sale muy fácil y no pueder regenerarlo.</p>
+					  <a href="#" class="btn btn-primary">Ver más</a>
+					</div>
+				</div>
+				<div class="card" style="width: 25rem;">
+					<img src="../img/plants/watering2.jpg" class="card-img-top" alt="riego de crasas">
+					<div class="card-body">
+					  <h5 class="card-title fs-3">Invierno</h5>
+					  <p class="card-text fs-4">Muy pocas especies toleran temperaturas bajas (-5°), ni siquiera los cactus. En épocas muy frías es importante mantener el sustrato lo más seco posible y reducir la frecuencia de riego.</p>
+					  <a href="#" class="btn btn-primary">Ver más</a>
+					</div>
+				</div>
+			</div>
 		</section>
 		
 	</main></div>
 	<!--finaliza texto, inicia footer-->
-	<footer>
+	<footer class="footer">
 		<h3  class="itemsTitleStyle">Seguinos en nuestras redes sociales!!!</h3>
 		<section>
 	    		<a href="https://www.instagram.com" target="blank"><img src="../img/instagram-logo-32.png" alt="instagram icon"></a>  

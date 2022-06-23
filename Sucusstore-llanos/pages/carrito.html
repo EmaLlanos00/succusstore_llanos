@@ -5,9 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mis compras</title>
 	<link rel="shortcut icon" href="./img/favicon.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/styles.css">
 	<link rel="stylesheet" href="../animaciones/animations.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
 	<!--inicia nav y cartel promocional-->
@@ -99,15 +99,36 @@
 		</button>
 	</div>
 	<main id="mainCarrito">
-		<section class="itemsSignScnd">
-			<h2>Upss, tu carrito está vacío. Agregale lo que quieras comprar o podés ver los productos que te recomendamos acá abajo ;)</h2>
+		<section class="container-fluid">
+			<h2 class="itemsTitleStyle">Upss, tu carrito está vacío. Agregale lo que quieras comprar o podés ver los productos que te recomendamos acá abajo ;)</h2>
 		</section>
 		<section>
 			<h3 class="itemsTitleStyle">Recomendados</h3>
-			<div class="productGalery textCenter">
-				<img class="imgStyle1" src="../img/plants/echeveria-chihuahuensis.jpg" alt="echeveria chihuahuensis planta">
-				<img class="imgStyle1" src="../img/miscellaneous/maceta-bol-n35.jpg" alt="maceta bol grande">
-				<img class="imgStyle1" src="../img/miscellaneous/puzolana-roja.jpg" alt="puzolana roca volcánica">
+			<div class="cardFlex">
+				<div class="card" style="width: 25rem;">
+					<img src="../img/plants/echeveria-chihuahuensis.jpg" class="card-img-top" alt="echeveria chihuahuensis planta">
+					<div class="card-body">
+					  <h5 class="card-title fs-3">Echeveria Chihuahuensis</h5>
+					  <p class="card-text fs-4">De porte pequeño, esta suculenta es imprescindible en el vivero de los amantes de las echeverias. Con un borde rojizo que toma precencia cuando asoma el invierno.</p>
+					  <a href="#" class="btn btn-primary">Comprar</a>
+					</div>
+				</div>
+				<div class="card" style="width: 25rem;">
+					<img src="../img/plants/echeveria-laui.jpg" class="card-img-top" alt="echeveria laui">
+					<div class="card-body">
+					  <h5 class="card-title fs-3">Echeveria Laui</h5>
+					  <p class="card-text fs-4">Esta Echeveria originaria de México es muy popular entre coleccionistas. Conformada por una roseta de hojas guresas y de un tono blanco grisáseo que llama la atención en donde se la ubique.</p>
+					  <a href="#" class="btn btn-primary">Comprar</a>
+					</div>
+				</div>
+				<div class="card" style="width: 25rem;">
+					<img src="../img/plants/crassula-ovata.jpg" class="card-img-top" alt="crassula ovata arbol de jade">
+					<div class="card-body">
+					  <h5 class="card-title fs-3">Crassula Ovata</h5>
+					  <p class="card-text fs-4">Conocida coloquialmente como árbol de jade, esta planta es ideal para principiantes. Su gran tolerancia a sustratos, climas e iluminación diversos la hace una planta muy versátil y de fácil cuidado. </p>
+					  <a href="#" class="btn btn-primary">Comprar</a>
+					</div>
+				</div>
 			</div>
 		</section>
 		<!--inicia footer-->
